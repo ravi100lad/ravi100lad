@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\bin\Debug\netstandard2.0\WeatherReport.deps.json
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\bin\Debug\netstandard2.0\WeatherReport.dll
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\bin\Debug\netstandard2.0\ref\WeatherReport.dll
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\bin\Debug\netstandard2.0\WeatherReport.pdb
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\DetailView.xaml.g.cs
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\WeatherReport.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\WeatherReport.AssemblyInfo.cs
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\WeatherReport.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\WeatherReport.dll
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\ref\WeatherReport.dll
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\WeatherReport.pdb
+C:\Users\HP\source\repos\WeatherReport\WeatherReport\obj\Debug\netstandard2.0\WeatherReport.csprojAssemblyReference.cache

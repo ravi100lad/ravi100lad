@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:WeatherReport.ViewModel"
+             xmlns:model="clr-namespace:WeatherReport.Model" Title="Home"
+             x:Class="WeatherReport.MainPage"  BackgroundColor="{StaticResource Primary}"
+             xmlns:pnck="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             BindingContext="{Binding locationViewModel, Source={StaticResource locator}}" >
+
+    
+    <StackLayout >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition  Height="80"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Frame Grid.Row="0" Grid.Column="0" CornerRadius="5" Padding="10,10,10,10" Margin="10,50,10,10"  BackgroundColor="White">
+                <Picker  Title="-Select Location-" ItemsSource="{Binding LocationList}"  
+                                SelectedIndexChanged="Picker_SelectedIndexChanged"  
+                         TextColor="#2F4F4F" x:Name="ddllocation"
+                                ItemDisplayBinding="{Binding title}" 
+                         SelectedItem="{Binding SelectedLocation}" />
+
+            </Frame>
+            <Label Text="{Binding WoeidText}" IsVisible="false"  x:Name="txtwoeid" TextColor="white" />
+            <Label Text="{Binding LocationText}" IsVisible="false"  x:Name="txtlocationname" TextColor="white" />
+
+            <pnck:PancakeView Grid.Row="1"  Grid.Column="0" 
+           WidthRequest="50"
+            BackgroundColor="Black"  Margin="10,10,10,10"
+            CornerRadius="20,20,20,20">
+                <Button
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Refresh"
+                        TextColor="white" Command="{Binding btnRefreshCommand}"
+                        VerticalOptions="CenterAndExpand"  x:Name="btnrefresh" >
+                </Button>
+            </pnck:PancakeView>
+
+            <Label Grid.Row="2"  Grid.Column="0" x:Name="errorlbl" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Red" IsVisible="true" ></Label>
+
+            <Label Grid.Row="3" Margin="30,0,0,0"  Grid.Column="0" WidthRequest="400" 
+                   Text="Click on refresh button to view location list" 
+                   HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontSize="Medium" ></Label>
+            <ActivityIndicator x:Name="activity"  HorizontalOptions="Center" VerticalOptions="Center"
+                       IsRunning="{Binding IsLoading}"  
+                      
+                       IsVisible="{Binding IsVisible}"    
+                       Color="Black"  
+                       BackgroundColor="Transparent"/>
+        </Grid>
+    </StackLayout>
+    
+</ContentPage>
