@@ -6,5 +6,5 @@
 * User will select the location and can view the future weather condition of that particular location.
 ### API use in the code to get locations and weather reports
 
-* [Location Search][https://www.metaweather.com/api/location/search/?lattlong=(latt),(long)]
-* [Location][https://www.metaweather.com//api/location/(woeid)/]
+* [Location Search](https://www.metaweather.com/api/location/search/?lattlong=(latt),(long))
+* [Location](https://www.metaweather.com//api/location/(woeid)/)
