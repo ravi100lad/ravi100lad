@@ -1,4 +1,4 @@
-### Weather Report Xamarin App 👋
+### Weather Report Xamarin App
 
 <!--
 **ravi100lad/ravi100lad** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
